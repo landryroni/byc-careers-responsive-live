@@ -26,10 +26,11 @@
 
     <body>
         <div id="navbar">
+            <!-- <img id="logo-with-text" alt="BYC logo-with-text" src=""> -->
             <img id="logo" alt="BYC logo" src="slogan.jpg">
 
         </div>
-        <img id="Banner" src="Banner.jpg" alt="Banner" height="240">
+        <img id="banner" src="Banner.jpg" alt="Banner" >
         <!-- <div style="font-size: 5px;"> -->
             <h1>
                About BYC
@@ -52,28 +53,62 @@
                         <li> 
                             <a href="link to dv boot">
         
-                                BYC Full Stakc Developer Bootcamp
+                                Build Your Career with Full Stakc Developer Bootcamp
                             </a>
                         </li>
-                        <li><a> BYC Data Sciene Bootcamp</a></li>
-                        <li> <a>PLC Basic Programing Bootcamp</a></li>
+                        <li><a> Build Your Career with Data Sciene Bootcamp</a></li>
+                        <li> <a>Build Your Career with PLC Basic Programing Bootcamp</a></li>
                     </ol>
                 </p>
+                <!-- <ol>
+                    <li><a>BYC Full Stakc Developer Bootcamp</a></li>
+                    <li><a>BYC Data Sciene Bootcamp</a></li>
+                    <li><a>PLC Basic Programing Bootcamp</a></li>
+                </ol> -->
+                
             </div>
 
 
             <div id="team">
-                <img src="Team.jpg" alt="Team" height="240">
+                <img src="Team.jpg" alt="Team" height="180">
             </div>
 
         </div>
 
 
 
-        <h2>Job openings</h2>
-        <div id="jobs">
-            <div>
-                <table id="jobs-table">
+        <h2>Job Opportinuties</h2>
+        <div id="jobs" >
+            <div id="jobs-list">
+                <div class="job">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="job-detail">Bengaluru, India</div>
+                    <div class="job-detail">₹ 12,00,000</div>
+                    <div class="job-detail">Posted Mar 3, 2023</div>
+                </div >
+                <div class="job">
+                    <div class="job-title">Full Stack Developer</div>
+                    <div class="job-detail">New Delhi, India</div>
+                    <div class="job-detail">₹ 15,00,000</div>
+                    <div class="job-detail">Posted Feb 1, 2023</div>
+                </div>
+                <div class="job">
+                    <div class="job-title">Data Scientist</div>
+                    <div class="job-detail">San Francisco, USA</div>
+                    <div class="job-detail">$175,000</div>
+                    <div class="job-detail">Posted Dec 22, 2022</div>
+                </div>
+                <div class="job">S
+                    <div class="job-title">ML Engineer</div>
+                    <div class="job-detail">Remote</div>
+                    <div class="job-detail">$80,000</div>
+                    <div class="job-detail">Posted Sep 19, 2022</div>
+                </div>
+            </div>
+    
+            <div style="text-align: center;">
+                
+                <table id="jobs-table" >
                     <tr class="jobs-header-row">
                         <th rowspan="2">Job Title</th>
                         <th colspan="2">Location</th>
@@ -112,143 +147,146 @@
                         <td>Jan 20, 2024</td>
                     </tr>
                 </table>
-            </div>
-            <div id="application">
-                <h2>Submit Your Application</h2>
 
-                <form id="application-form" 
-                      action="https://formbold.com/s/981N2" 
-                      method="POST"
-                      enctype="multipart/form-data"
-                      >
-                    <div class="form-group">
-                        <label for="name">Full Name</label><br>
-                        <input type="text" id="name" name="Full Name" required placeholder="Jhon doe">
+            </div>   
 
-                    </div>
-                    <div class="form-group">
-                        <label for="pass">Password</label><br>
-                        <input type="password" id="pass" name="Password" minlength="10" required placeholder="Password">
-
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label><br>
-                        <input type="email" id="email" name="Email Address" required placeholder="sample@mail.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="Phone">Phone</label><br>
-                        <input type="phone" id="phone" name="phone" required placeholder="+91989898989898">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="dob">Date of Birth</label><br>
-                        <input type="date" id="dob" name="dob" required placeholder="24/02/1992">
-                    </div>
-                    <div class="form-group">
-                        <label for="position">Position Applied for</label>
-                        <select id="position" name="Position Applied" required>
-                            <option value="frontend developer">Frontend developer</option>
-                            <option value="full stack developer">full stack developer</option>
-                            <option value="data scientits">Data scientist</option>
-                            <option value="Automatic">Automatic</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="resume">Upload Resume</label><br>
-                        <input type="file" id="resume" name="drone" accept=".pdf,.doc,.docx" required>
-                    </div>
-                    <div>
-                        <label for="gender">Gender</label>
-                        <fieldset class="fieldset">
-                            <div>
-                                <input type="radio"  id="male"  name="drone" value="male" checked />
-                                <label for="male">Male</label>
-                            </div>
-                            <div>
-                                <input type="radio"  id="female"  name="drone" value="female"  checked />
-                                <label for="female">Female</label>
-                            </div>
-                            
-                        </fieldset>
-            
-                    </div>
-                    <div class="form-group">
-                        <label for="coverletter">Cover Letter</label><br>
-                        <textarea id="coverletter" name="coverletter"  rows="5" placeholder="Explain what makes you suitable for the job.."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="terms">
-                        <input type="checkbox" id="terms" name="terms" required >
-                        I agree to the terms and conditions
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" id="submit" value="Submit Application">
-                    </div>
-                </form>
-
-                <!-- TODO-Sample form - remove later
-                <form action="process-form.php" method="post">
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="Full Name" required>
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="Email Address" required>
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea  id="message" name="message" required></textarea>
-                    </div>
-                    <div>
-                        <label for="name">Name</label>
-                         <input type="submit" value="Submit"> 
-                    </div> 
-
-                </form> -->
-
-            </div>
-            
-            <div>
-                <a href="mailto:support@byc.com?subject=Frontend" class="apply" target="_blank">Apply</a>
-                <h3 class="job-role">Frontend Developer</h3>
-                <div class="location">Douala, Cameroon</div>
-            </div>
-            <div>
-                <a href="mailto:support@byc.com?subject=Backend" class="apply" target="_blank">Apply</a>
-                <h3 class="job-role">Backend Developer</h3>
-                <div class="location">Remote</div>
+        </div>    
         
-            </div>
-            <div>
-                <a href="mailto:support@byc.com?subject=Data Scientist" class="apply" target="_blank">Apply</a>
-                <h3 class="job-role">Data Scientist</h3>
-                <div class="location">Guangzhou, China</div>
-            </div>
-            <div>
-                <a href="mailto:support@byc.com?subject=Automatic" class="apply" target="_blank">Apply</a>
-                <h3 class="job-role">Automatic</h3>
-                <div class="location">Wuhan, China</div>
-            </div>
-            
+        <h2>Submit Your Application</h2>
+        <div id="application">
+            <form id="application-form" 
+                    action="https://formbold.com/s/981N2" 
+                    method="POST"
+                    enctype="multipart/form-data"
+                    >
+                <div class="form-group">
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="Full Name" required placeholder="Jhon doe">
+
+                </div>
+                <div class="form-group">
+                    <label for="pass">Password</label><br>
+                    <input type="password" id="pass" name="Password" minlength="10" required placeholder="Password">
+
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="Email Address" required placeholder="sample@mail.com">
+                </div>
+                <div class="form-group">
+                    <label for="Phone">Phone</label><br>
+                    <input type="phone" id="phone" name="phone" required placeholder="+91989898989898">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" id="dob" name="dob" required placeholder="24/02/1992">
+                </div>
+                <div class="form-group">
+                    <label for="position">Position Applied for</label>
+                    <select id="position" name="Position Applied" required>
+                        <option value="frontend developer">Frontend developer</option>
+                        <option value="full stack developer">full stack developer</option>
+                        <option value="data scientits">Data scientist</option>
+                        <option value="Automatic">Automatic</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="resume">Upload Resume</label><br>
+                    <input type="file" id="resume" name="drone" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div>
+                    <label for="gender">Gender</label>
+                    <fieldset class="fieldset">
+                        <div>
+                            <input type="radio"  id="male"  name="drone" value="male" checked />
+                            <label for="male">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio"  id="female"  name="drone" value="female"  checked />
+                            <label for="female">Female</label>
+                        </div>
+                        
+                    </fieldset>
+        
+                </div>
+                <div class="form-group">
+                    <label for="coverletter">Cover Letter</label><br>
+                    <textarea id="coverletter" name="coverletter"  rows="5" placeholder="Explain what makes you suitable for the job.."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required >
+                    I agree to the terms and conditions
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="submit" value="Submit Application">
+                </div>
+            </form>
+
+            <!-- TODO-Sample form - remove later
+            <form action="process-form.php" method="post">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Full Name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email Address" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea  id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <label for="name">Name</label>
+                        <input type="submit" value="Submit"> 
+                </div> 
+
+            </form> -->
+
         </div>
-        <div class="footer">
-            <ul class="footer-links">
-                <li>
-                    <a href="link to courses" target="_blank">
-                        Courses
-                    </a>                    
-                </li>
-                <li>
-                    <a href="link to programs" target="_blank">
-                        Programs
-                    </a>
-                </li>
-                <li>Youtube</li>
-            </ul>
-            <span class="copyright">© 2023 Jovian</span>
+        
+        <!-- <div>
+            <a href="mailto:support@byc.com?subject=Frontend" class="apply" target="_blank">Apply</a>
+            <h3 class="job-role">Frontend Developer</h3>
+            <div class="location">Douala, Cameroon</div>
         </div>
+        <div>
+            <a href="mailto:support@byc.com?subject=Backend" class="apply" target="_blank">Apply</a>
+            <h3 class="job-role">Backend Developer</h3>
+            <div class="location">Remote</div>
+    
+        </div>
+        <div>
+            <a href="mailto:support@byc.com?subject=Data Scientist" class="apply" target="_blank">Apply</a>
+            <h3 class="job-role">Data Scientist</h3>
+            <div class="location">Guangzhou, China</div>
+        </div>
+        <div>
+            <a href="mailto:support@byc.com?subject=Automatic" class="apply" target="_blank">Apply</a>
+            <h3 class="job-role">Automatic</h3>
+            <div class="location">Wuhan, China</div>
+        </div>
+         -->
+    </div>
+    <div class="footer">
+        <ul class="footer-links">
+            <li>
+                <a href="link to courses" target="_blank">
+                    Courses
+                </a>                    
+            </li>
+            <li>
+                <a href="link to programs" target="_blank">
+                    Programs
+                </a>
+            </li>
+            <li>Youtube</li>
+        </ul>
+        <span class="copyright">© 2023 Jovian</span>
+    </div>
         
         
     </body>
